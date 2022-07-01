@@ -1,3 +1,9 @@
 import streamlit as st
 
-st.text('Primeira Aplicação')
+contador = 0
+
+st.text('Aplicação Contador')
+
+if st.button('Incrementar'):
+    contador += 1
+    st.text('Contador' + str(contador))

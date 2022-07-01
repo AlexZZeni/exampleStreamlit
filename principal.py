@@ -4,7 +4,7 @@ contador = 0
 
 st.text('Aplicação Contador')
 st.text_input('Insira seu Nome: ', key = 'nome')
-nome = set.session_state.nome
+nome = st.session_state.nome
 if st.button('Incrementar'):
     contador += 1
     st.text(nome + ' Contador ' + str(contador))
